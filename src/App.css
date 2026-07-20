@@ -1,0 +1,312 @@
+:root{
+    font-family: Inter, Arial, sans-serif;
+    color: #172033;
+    background: #f5f7fb;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #f5f7fb;
+}
+
+main{
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 32px 0 56px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid #dde3ee;
+}
+nav:p{
+    margin: 0;
+    font-weight: 800;
+}
+
+ul{
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    list-style-type: none;
+}
+
+li{
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #3d4a5f;
+    font-weight: 600;
+}
+
+li:hover{
+    background: #eef2f7;
+    color: #172033;
+}
+
+section{
+    margin-bottom: 36px;
+}
+
+h2{
+    margin: 0 0 20px;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #172033;
+}
+
+a{
+    color: #3d4a5f;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#bio{
+    display: grid;
+    grid-template-columns: minmax(240px, 420px) 1fr;
+    gap: 34px;
+    align-items: center;
+    padding: 34px;
+    border: 1px solid #dde3ee;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 14px 32px rgba(24, 36, 58, 0.08);
+}
+
+#lentz{
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+#about{
+    max-width: 620px;
+    margin: 0;
+    color: #3d4a5f;
+    font-size: 1.15rem;
+    line-height: 1.75;
+}
+
+#methodSection{
+    padding-top: 4px;
+}
+
+#methoSection h2{
+    text-align: left;
+}
+
+#methodSection{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.projects{
+    min-height: 360px;
+    margin: 0;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #dde3ee;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 12px 28px rgba(24, 36, 58, 0.08);
+}
+
+.projects p{
+    max-width: 620px;
+    margin: 0;
+    color: #3d4a5f;
+    font-size: 1.15rem;
+    line-height: 1.75;
+}
+
+.projects img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #e2e8f0;
+}
+
+.projects div{
+    margin: 0;
+    color: #526174;
+    line-height: 1.55;
+}
+
+.projects a{
+    width: fit-content;
+    margin-top: auto;
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: #edf3ff;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#contactMe{
+    padding-top: 4px;
+}
+
+#contactMeBox{
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(280px, 1.2fr);
+    gap: 32px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px;
+    border: 1px solid #dde3ee;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 12px 28px rgba(24, 36, 58, 0.08);
+}
+
+#contactMe h2{
+    text-align: Left;
+}
+
+#contactMe p{
+    margin: 0;
+    color: #3d4a5f;
+    line-height: 1.6;
+}
+
+#contactMe input,
+#contactMe textarea{
+    width: 100%;
+    border: 1px solid #cfd8e6;
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #172033;
+    background: #ffffff;
+    font: inherit;
+}
+
+#contactMe input:focus,
+#contactMe textarea:focus{
+    outline: 3px solid #dbeafe;
+    border-color: #1f5eff;
+}
+
+#contactMe textarea{
+    resize: vertical;
+}
+
+#contactMe button{
+    align-self: flex-start;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 18px;
+    background: #172033;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#contactMe button:hover{
+    background: #263349;
+}
+
+@media (max-width: 800px){
+    ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #bio,
+    #methodSection,
+    #contactMeBox{
+        grid-template-columns: 1fr;
+    }
+
+    #bio{
+        padding: 24px;
+    }
+
+    #lentz{
+        max-height: none;
+    }
+}
+
+@media (max-width: 520px){
+    main{
+        width: min(100% - 24px, 1120px);
+        padding-top: 24px;
+    }
+
+    h2{
+        font-size: 1.65rem;
+    }
+
+    ul{
+        width: min(100% - 24px, 1120px);
+        gap: 4px;
+        padding: 12px 0;
+    }
+
+    li{
+        padding: 7px 8px;
+        font-size: 0.9rem;
+    }
+
+    #bio,
+    .projects,
+    #contactMeBox{
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    #about{
+        font-size: 1rem;
+    }
+
+    #contactMe button{
+        width: 100%;
+    }
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.skills img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.skills p{
+    margin: 0;
+}
+.skills > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
