@@ -45,7 +45,7 @@ export default function App() {
             <p id="about">
               My name is Lentz Fortune. I'm a Software Engineer and recent Florida Gulf Coast University
               (FGCU) graduate with a passion for building web-based solutions.
-              I currently work as an Information Technolgy Associate, where I solve technical problems and support end users.
+              I currently work as an Information Technolgy Associate, where I solve technical problems for customers.
               I provide website development and maintenance, WordPress updates, database management, SQL query optimization, and 
               ongoing technical support. Whether you're starting a new project or improving an existing one, I'm here to help bring your ideas to life.
             </p>
